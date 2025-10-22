@@ -1,0 +1,222 @@
+/* ----- MENU PRINCIPAL ----- */
+@font-face {
+  font-family: 'fontelogo';
+  src: url(../_fonts/Boogaloo-Regular.ttf);
+}
+body {
+background-color: #d3d3d3;
+ width: 1200px;
+  margin: 0px;
+  margin-top: -20px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0px; 
+}
+div#cabecalho img#icone {
+position: absolute;
+left: 1100px;
+top: 50px;
+}
+
+div#cabecalho h1 {
+  font-family: 'fontelogo', sans-serif;
+  font-size: 30pt;
+  color: rgb(170, 138, 167);
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.2); /* sombra mais suave e elegante */
+}
+#tirotres {
+  font-family: 'fontelogo', sans-serif;
+  font-size: 24pt;
+  color: rgb(170, 138, 167);
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.2); /* sombra mais suave e elegante */
+}
+#mdois {
+  font-family: 'fontelogo', sans-serif;
+  font-size: 24pt;
+  color: rgb(170, 138, 167);
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.2); /* sombra mais suave e elegante */
+}
+#mtres {
+  font-family: 'fontelogo', sans-serif;
+  font-size: 24pt;
+  color: rgb(170, 138, 167);
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.2); /* sombra mais suave e elegante */
+}
+
+
+div#cabecalho #tiro {
+font-size: 28px;
+
+}
+div#cabecalho #tirodois {
+font-size: 35px;
+
+}
+
+#tiroquatro {
+  font-size: 25px; /* título menor */
+}
+#texto-novidades {
+  font-size: 20px;   /* tamanho do parágrafo */
+  color: #555;       /* cor mais suave */
+  line-height: 1.4;  /* espaçamento mais agradável */
+}
+
+
+div#cabecalho h2 {
+  font-family: Arial, sans-serif;
+  color: #7f7f7f;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.3); /* leve sombra opcional para combinar */
+  font-size: 15pt;
+}
+
+hr.linha-cabecalho {
+  border: none;           /* remove a borda padrão */
+  height: 2px;            /* altura da linha */
+  background-color: black; /* cor da linha */
+  width: 1000px;           /* comprimento da linha */
+  margin: 10px 0;         /* espaço acima e abaixo */
+}
+hr.linha-dois {
+  border: none;           /* remove a borda padrão */
+  height: 2px;            /* altura da linha */
+  background-color:rgb(170, 138, 167); /* cor da linha */
+  width: 600px;           /* comprimento da linha */
+  margin: 10px 0;         /* espaço acima e abaixo */
+}
+
+
+
+div#fundo-branco {
+  width: 1200px;
+  margin: 10px auto 0 auto; /* centraliza horizontalmente */
+  background-color: white;
+  min-height: 100vh;
+  padding: 0 20px;
+  box-sizing: border-box; /* conta o padding dentro da largura */
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+
+}
+
+
+
+nav#menu {
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+  position: absolute;
+  top: 18px;
+  left: 300px;
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+  display: flex;        /* organiza em linha */
+  gap: 20px;            /* espaço entre itens */
+}
+
+nav li {
+  position: relative;   /* necessário pro submenu */
+}
+
+nav a {
+  text-decoration: none;
+  color: rgb(80, 45, 82);
+  font-weight: bold;
+  padding: 8px 12px;
+  display: block;
+  transition: 0.3s;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+/* hover no menu */
+nav a:hover {
+  background: #f0f0f0;
+  border-radius: 5px;
+}
+
+/* ----- SUBMENU ----- */
+nav ul.submenu {
+  display: none;
+  position: absolute;
+  top: 100%;   /* logo abaixo do item pai */
+  left: 0;
+  background: white;
+  border: 1px solid #ccc;
+  min-width: 200px;
+  z-index: 1000;
+  flex-direction: column; /* garante coluna */
+}
+
+nav ul.submenu li {
+  padding: 0; /* reseta */
+}
+
+nav ul.submenu li a {
+  padding: 8px 12px;
+  color: black;
+}
+
+nav ul.submenu li:hover {
+  background: #eaeaea; /* efeito hover no submenu */
+}
+
+/* mostrar submenu ao passar o mouse */
+nav li:hover > ul.submenu {
+  display: flex;
+}
+
+section#corpo {
+display: block;
+width: 700px;
+float: left;
+}
+aside#lateral {
+display: block;
+width: 500px;
+float: right;
+margin-top: -1180px;
+  font-family: Arial, sans-serif;
+  color: #7f7f7f;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.3); /* leve sombra opcional para combinar */
+  font-size: 10pt;
+}
+footer#rodape{
+clear: both;
+
+}
+
+.meuvideo {
+  width: 45%;         /* ocupa 80% da largura da tela */
+  border-radius: 15px; /* bordas arredondadas */
+  box-shadow: 0 0 15px rgba(0,0,0,0.5); /* sombra */
+  display: block;
+  margin: 20px auto 20px 0; /* margem automática do lado direito */
+}
+.legenda-video {
+  text-align: left;     /* centraliza o texto */
+  font-size: 20px;        /* tamanho pequeno */
+  color: #555;            /* cinza suave */
+  margin-top: 8px;        /* espaço entre o vídeo e o texto */
+  font-style: italic;     /* deixa em itálico (opcional) */
+}
+
+.legenda-video1 {
+  text-align: left;
+  font-size: 14px;
+  color: #555;
+  margin-top: 8px;
+}
+
+.legenda-video1 a {
+  color: #9b9b9b;        /* cor do link */
+  text-decoration: none; /* tira o sublinhado */
+  font-size: 15px;
+}
+
+.legenda-video1 a:hover {
+  text-decoration: underline; /* sublinhado só ao passar o mouse */
+}
+
+

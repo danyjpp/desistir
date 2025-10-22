@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moda & Cultura Pop Japão</title>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: #f9f4fc;
+            font-family: 'Quicksand', sans-serif;
+            color: #333;
+        }
+
+        /* Estilo da "janela retrô" */
+        header {
+            background: #7d5b8c;
+            color: white;
+            padding: 0.5rem 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-family: 'VT323', monospace;
+            font-size: 1.2rem;
+        }
+
+        header .buttons {
+            display: flex;
+            gap: 8px;
+        }
+
+        header .btn {
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+            background: #fff;
+        }
+
+        header .btn.red { background: #ff5c5c; }
+        header .btn.yellow { background: #ffbd4c; }
+        header .btn.green { background: #00ca56; }
+
+        /* Layout geral */
+        .container {
+            display: flex;
+            max-width: 1200px;
+            margin: auto;
+            padding: 1rem;
+            gap: 1.5rem;
+        }
+
+        /* Coluna lateral estilo perfil */
+        aside {
+            width: 280px;
+            background: #fff;
+            border: 2px solid #d7a1f9;
+            border-radius: 10px;
+            padding: 1rem;
+            font-size: 0.95rem;
+        }
+
+        aside h2 {
+            font-size: 1.2rem;
+            color: #7d5b8c;
+            margin-top: 0;
+            border-bottom: 2px dashed #d7a1f9;
+            padding-bottom: 5px;
+        }
+
+        aside img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 1rem;
+        }
+
+        aside ul {
+            list-style: none;
+            padding: 0;
+            margin: 0.5rem 0;
+        }
+
+        aside ul li {
+            margin-bottom: 0.4rem;
+        }
+
+        /* Conteúdo principal */
+        main {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        section {
+            background: #fff;
+            border: 2px solid #d7a1f9;
+            border-radius: 10px;
+            padding: 1rem 1.5rem;
+        }
+
+        section h2 {
+            font-family: 'VT323', monospace;
+            font-size: 1.5rem;
+            color: #7d5b8c;
+            margin-top: 0;
+            margin-bottom: 0.8rem;
+        }
+
+        section p {
+            line-height: 1.6;
+            margin-bottom: 1rem;
+        }
+
+        .img-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 0.8rem;
+        }
+
+        .img-container img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+            border: 2px solid #d7a1f9;
+            transition: transform 0.3s;
+        }
+
+        .img-container img:hover {
+            transform: scale(1.05);
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+            background: #7d5b8c;
+            color: white;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div>💻 Moda & Cultura Pop Japão</div>
+    <div class="buttons">
+        <div class="btn white"></div>
+        <div class="btn white"></div>
+        <div class="btn white"></div>
+    </div>
+</header>
+
+<div class="container">
+    <!-- Coluna lateral -->
+    <aside>
+        <img src="img/logo_pop.png" alt="Logo" style="width:100%; max-width:200px; height:auto; display:block; margin:0 auto;">
+        <h2>Perfil</h2>
+        <p><strong>Projeto Japão</strong><br>
+            Moda, cultura pop e estética jovem japonesa 💜</p>
+        <h2>Links</h2>
+        <ul>
+            <li><a href="../home/index.html">🤍 Home</a></li>
+            <li><a href="../cultura/index.html">🤍 Cultura</a></li>
+            <li><a href="../tradicões/index.html">🤍 Tradições</a></li>
+            <li><a href="../moda/index.html">🤍 Moda & Pop</a></li>
+            <li><a href="../fotos/index.html">🤍 Fotos</a></li>
+            <li><a href="../multimidia/index.html">🤍 Multimídia</a></li>
+        </ul>
+    </aside>
+
+    <!-- Conteúdo -->
+    <main>
+        <section>
+            <h2>Harajuku – Moda de Rua</h2>
+            <p><em>Harajuku é um bairro icônico de Tóquio, famoso mundialmente por sua moda de rua vibrante e ousada.</em><br>
+                <em>Jovens de diferentes estilos se encontram aqui, criando combinações únicas de roupas, acessórios e maquiagem.</em><br>
+                <em>É comum ver influências do estilo kawaii, punk, gótico, Lolita e muitas outras subculturas se misturando.</em><br>
+                <em>Cada outfit é uma expressão artística, mostrando criatividade, identidade pessoal e liberdade de expressão.</em><br>
+                <em>Além de moda, Harajuku é um espaço cultural, com lojas, cafés temáticos e eventos que celebram a estética jovem japonesa.</em></p>
+
+            <div class="img-container">
+                <img src="img/harajuku1.jpg" alt="">
+                <img src="img/harajuku2.jpg" alt="">
+                <img src="img/harajuku3.webp" alt="">
+                <img src="img/harajuku4.jpg" alt="">
+            </div>
+        </section>
+
+        <section>
+            <h2>Cosplay</h2>
+            <p><em>O cosplay é a prática de se vestir e interpretar personagens de anime, mangá, videogames ou cultura pop em geral.</em><br>
+                <em>Envolve não apenas roupas, mas também maquiagem, perucas e acessórios específicos para tornar o personagem mais realista.</em><br>
+                <em>Além do visual, muitos cosplayers desenvolvem performances ou participam de concursos, mostrando habilidade e dedicação.</em><br>
+                <em>É uma forma de expressão artística e paixão cultural, conectando fãs ao redor do mundo e celebrando a criatividade individual.</em></p>
+            <div class="img-container">
+                <img src="img/cosplay1.webp" alt="">
+                <img src="img/cosplay2.webp" alt="">
+                <img src="img/cosplay3.jpg" alt="">
+                <img src="img/cosplay4.jpg" alt="">
+            </div>
+        </section>
+
+        <section>
+            <h2>Anime e Cultura Pop</h2>
+            <p><em>Anime é uma forma de animação originária do Japão, conhecida por sua diversidade de estilos, histórias e personagens marcantes.</em><br>
+                <em>Vai desde aventuras épicas e fantasia até dramas emocionais e narrativas cotidianas, conquistando públicos de todas as idades.</em><br>
+                <em>Mais do que entretenimento, o anime influencia moda, música, arte e comportamento, tornando-se parte da cultura pop global.</em><br>
+                <em>Muitos animes também refletem aspectos da sociedade japonesa, mitologia, tecnologia e valores culturais, oferecendo uma experiência rica e educativa.</em></p>
+            <div class="img-container">
+                <img src="img/anime1.jpg" alt="">
+                <img src="img/anime2.jpg" alt="">
+                <img src="img/anime3.jpg" alt="">
+                <img src="img/anime4.jpg" alt="">
+            </div>
+        </section>
+
+        <section>
+            <h2>Street Fashion</h2>
+            <p><em>A street fashion japonesa é reconhecida pela originalidade e ousadia, sendo um reflexo da cultura urbana e das tendências jovens.</em><br>
+                <em>Estilos diferentes coexistem nas ruas de cidades como Tóquio e Osaka, misturando influências ocidentais e japonesas.</em><br>
+                <em>Essa moda valoriza a expressão individual, permitindo que cada pessoa crie combinações únicas e inesperadas de roupas e acessórios.</em><br>
+                <em>Eventos de moda de rua e encontros de subculturas mostram como a criatividade e a liberdade estética são celebradas no cotidiano.</em></p>
+            <div class="img-container">
+                <img src="img/street1.jpg" alt="">
+                <img src="img/street2.jpg" alt="">
+                <img src="img/street3.jpg" alt="">
+                <img src="img/street4.jpg" alt="">
+            </div>
+        </section>
+    </main>
+</div>
+
+<footer>
+    © 2025 - Projeto Japão | Moda & Cultura Pop
+</footer>
+</body>
+</html>
+
+
+
+

@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cultura do Japão</title>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: #fffef5; /* amarelo pastel clarinho */
+            font-family: 'Quicksand', sans-serif;
+            color: #333;
+        }
+
+        /* Estilo da "janela retrô" */
+        header {
+            background: #f7e07a; /* amarelo pastel */
+            color: #333;
+            padding: 0.5rem 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-family: 'VT323', monospace;
+            font-size: 1.2rem;
+        }
+
+        header .buttons {
+            display: flex;
+            gap: 8px;
+        }
+
+        header .btn {
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+            background: #fff;
+        }
+
+        header .btn.red { background: #ff5c5c; }
+        header .btn.yellow { background: #ffbd4c; }
+        header .btn.green { background: #00ca56; }
+
+        /* Layout geral */
+        .container {
+            display: flex;
+            max-width: 1200px;
+            margin: auto;
+            padding: 1rem;
+            gap: 1.5rem;
+        }
+
+        /* Coluna lateral estilo perfil */
+        aside {
+            width: 280px;
+            background: #fff;
+            border: 2px solid #f7e07a;
+            border-radius: 10px;
+            padding: 1rem;
+            font-size: 0.95rem;
+        }
+
+        aside h2 {
+            font-size: 1.2rem;
+            color: #f7e07a;
+            margin-top: 0;
+            border-bottom: 2px dashed #f7e07a;
+            padding-bottom: 5px;
+        }
+
+        aside img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 1rem;
+        }
+
+        aside ul {
+            list-style: none;
+            padding: 0;
+            margin: 0.5rem 0;
+        }
+
+        aside ul li {
+            margin-bottom: 0.4rem;
+        }
+
+        aside ul li a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        aside ul li a:hover {
+            color: #f7e07a;
+        }
+
+        /* Conteúdo principal */
+        main {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        section {
+            background: #fff;
+            border: 2px solid #f7e07a;
+            border-radius: 10px;
+            padding: 1rem 1.5rem;
+        }
+
+        section h2 {
+            font-family: 'VT323', monospace;
+            font-size: 2rem;
+            color: #f9c867;
+            margin-top: 0;
+            margin-bottom: 0.7rem;
+            text-shadow: 1px 1px 0px #000; /* sombra preta igual ao contorno da imagem */
+        }
+        section p {
+            line-height: 1.6;
+            margin-bottom: 1rem;
+        }
+
+        section ul li {
+            margin-bottom: 0.5rem;
+        }
+
+        .img-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 0.8rem;
+        }
+
+        .img-container img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+            border: 2px solid #f7e07a;
+            transition: transform 0.3s;
+        }
+
+        .img-container img:hover {
+            transform: scale(1.05);
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+            background: #f7e07a;
+            color: #333;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div>🏵️ Cultura do Japão</div>
+    <div class="buttons">
+        <div class="btn white"></div>
+        <div class="btn white"></div>
+        <div class="btn white"></div>
+    </div>
+</header>
+
+<div class="container">
+    <!-- Coluna lateral -->
+    <aside>
+        <img src="img/logo_pop3.png" alt="Logo" style="width:100%; max-width:200px; height:auto; display:block; margin:0 auto;">
+        <h2>Perfil</h2>
+        <p><strong>Projeto Japão</strong><br>
+            Explore história, religião, idioma e tradições culturais 🌼</p>
+        <h2>Links</h2>
+        <ul>
+            <li><a href="../home/index.html">🤍 Home</a></li>
+            <li><a href="../cultura/index.html">🤍 Cultura</a></li>
+            <li><a href="../provincia/index.html">🤍 Províncias</a></li>
+            <li><a href="../gastronomia/index.html">🤍 Gastronomia</a></li>
+            <li><a href="../fotos/index.html">🤍 Fotos</a></li>
+            <li><a href="../multimidia/index.html">🤍 Multimídia</a></li>
+        </ul>
+    </aside>
+
+    <!-- Conteúdo -->
+    <main>
+        <section>
+            <h2>Festivais e Matsuri</h2>
+            <p><em>O Japão é famoso por seus festivais tradicionais, conhecidos como <em>matsuri</em>, que ocorrem durante todo o ano.</em><br>
+                <em>Cada região possui costumes e celebrações próprias, muitas vezes relacionadas a colheitas, mudanças sazonais ou eventos históricos.</em><br>
+                <em>Entre os mais conhecidos estão o <em>Gion Matsuri</em> em Kyoto, o <em>Nebuta Matsuri</em> em Aomori e o <em>Tanabata</em>, que celebra o encontro lendário das estrelas Vega e Altair.</em><br>
+                <em>Esses festivais são momentos de união comunitária, dança, música tradicional e gastronomia típica, oferecendo uma experiência cultural profunda.</em></p>
+            <div class="img-container">
+                <img src="img/matsuri1.jpg" alt="Matsuri 1">
+                <img src="img/matsuri2.jpg" alt="Matsuri 2">
+                <img src="img/matsuri3.jpg" alt="Matsuri 3">
+                <img src="img/matsuri4.webp" alt="Matsuri 4">
+            </div>
+        </section>
+
+        <section>
+            <h2>Religião</h2>
+            <p><em>No Japão, a espiritualidade está presente no cotidiano através do <em>Xintoísmo</em> e do <em>Budismo</em>.</em><br>
+                <em>O <em>Xintoísmo</em> valoriza os <em>kami</em>, espíritos da natureza, enquanto o <em>Budismo</em> foca na meditação e busca pela iluminação.</em><br>
+                <em>Muitos japoneses praticam ambas as tradições, participando de rituais xintoístas e cerimônias budistas, refletindo uma harmonia única entre fé, tradição e vida cotidiana.</em></p>
+            <div class="img-container">
+                <img src="img/templo1.jpg" alt="Templo 1">
+                <img src="img/templo2.jpg" alt="Templo 2">
+                <img src="img/templo3.webp" alt="Templo 3">
+                <img src="img/templo4.webp" alt="Templo 4">
+            </div>
+        </section>
+
+        <section>
+            <h2>Etiqueta</h2>
+            <p><em>A etiqueta japonesa reflete respeito e harmonia, incluindo cumprimentos com <em>ojigi</em>, tirar os sapatos antes de entrar em casas e manter discrição em locais públicos.</em><br>
+                <em>Em restaurantes, transportes e templos, é importante não falar alto, não tocar objetos sagrados sem permissão e presentear com cuidado.</em><br>
+                <em>Praticar essas normas demonstra respeito e permite uma integração mais profunda na sociedade japonesa.</em></p>
+            <div class="img-container">
+                <img src="img/etiqueta1.jpg" alt="Etiqueta 1">
+                <img src="img/etiqueta2.jpg" alt="Etiqueta 2">
+            </div>
+        </section>
+
+        <section>
+            <h2>Idioma Básico</h2>
+            <p><em>O idioma oficial do Japão é o <em>japonês</em>, rico em expressões e níveis de formalidade.</em><br>
+                <em>Aprender algumas palavras básicas facilita interações diárias e demonstra respeito pela cultura local.</em></p>
+            <ul>
+                <li><em>こんにちは (Konnichiwa)</em> – Olá / Boa tarde</li>
+                <li><em>ありがとう (Arigatou)</em> – Obrigado(a)</li>
+                <li><em>すみません (Sumimasen)</em> – Com licença / Desculpe</li>
+                <li><em>はい (Hai)</em> – Sim</li>
+                <li><em>いいえ (Iie)</em> – Não</li>
+            </ul>
+            <p>Mesmo o conhecimento básico abre portas para experiências autênticas no Japão e ajuda a compreender a cultura local.</p>
+            <div class="img-container">
+                <img src="img/idioma3.jpg" alt="Idioma 3">
+            </div>
+        </section>
+    </main>
+</div>
+
+<footer>
+    © 2025 - Projeto Japão | Cultura
+</footer>
+
+</body>
+</html>

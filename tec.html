@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tecnologia do Japão</title>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: #f5f5f5; /* Cinza pastel claro */
+            font-family: 'Quicksand', sans-serif;
+            color: #333;
+        }
+
+        /* Cabeçalho retrô */
+        header {
+            background: #b0b0b0; /* Cinza médio */
+            color: white;
+            padding: 0.5rem 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-family: 'VT323', monospace;
+            font-size: 1.2rem;
+        }
+
+        header .buttons {
+            display: flex;
+            gap: 8px;
+        }
+
+        header .btn {
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+            background: #fff;
+        }
+
+        header .btn.red { background: #ff5c5c; }
+        header .btn.yellow { background: #ffbd4c; }
+        header .btn.green { background: #00ca56; }
+
+        /* Layout */
+        .container {
+            display: flex;
+            max-width: 1200px;
+            margin: auto;
+            padding: 1rem;
+            gap: 1.5rem;
+        }
+
+        /* Sidebar */
+        aside {
+            width: 280px;
+            background: #fff;
+            border: 2px solid #a6a6a6; /* Cinza escuro */
+            border-radius: 10px;
+            padding: 1rem;
+            font-size: 0.95rem;
+        }
+
+        aside h2 {
+            font-size: 1.2rem;
+            color: #555;
+            margin-top: 0;
+            border-bottom: 2px dashed #a6a6a6;
+            padding-bottom: 5px;
+        }
+
+        aside img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 1rem;
+        }
+
+        aside ul {
+            list-style: none;
+            padding: 0;
+            margin: 0.5rem 0;
+        }
+
+        aside ul li {
+            margin-bottom: 0.4rem;
+        }
+
+        aside ul li a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        aside ul li a:hover {
+            color: #777;
+        }
+
+        /* Conteúdo */
+        main {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        section {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            background: #fff;
+            border: 2px solid #a6a6a6;
+            border-radius: 10px;
+            padding: 1rem 1.5rem;
+        }
+
+        section:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+
+        section h2 {
+            font-family: 'VT323', monospace;
+            font-size: 1.5rem;
+            color: #555;
+            margin-top: 0;
+            margin-bottom: 0.8rem;
+        }
+
+        section p {
+            line-height: 1.6;
+        }
+
+        section img {
+            width: 280px;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 8px;
+            border: 2px solid #a6a6a6;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+            background: #b0b0b0;
+            color: white;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <div>🚅 Tecnologia do Japão</div>
+    <div class="buttons">
+        <div class="btn white"></div>
+        <div class="btn white"></div>
+        <div class="btn white"></div>
+    </div>
+</header>
+
+<div class="container">
+    <!-- Sidebar -->
+    <aside>
+        <img src="img/logo_tecnologia.webp" alt="Logo Tecnologia" style="width:100%; max-width:200px; height:auto; display:block; margin:0 auto;">
+        <h2>Perfil</h2>
+        <p><strong>Projeto Japão</strong><br>
+            Conheça as inovações que colocaram o Japão como referência mundial em transporte e tecnologia 🚄</p>
+
+        <h2>Links</h2>
+        <ul>
+            <li><a href="../home/index.html">🤍 Home</a></li>
+            <li><a href="../cultura/index.html">🤍 Cultura</a></li>
+            <li><a href="../tradicões/index.html">🤍 Tradições</a></li>
+            <li><a href="../gastronomia/index.html">🤍 Gastronomia</a></li>
+            <li><a href="../tecnologia/index.html">🤍 Tecnologia</a></li>
+            <li><a href="../fotos/index.html">🤍 Fotos</a></li>
+            <li><a href="../multimidia/index.html">🤍 Multimídia</a></li>
+        </ul>
+    </aside>
+
+    <!-- Conteúdo -->
+    <main>
+        <section>
+            <img src="img/shinkansen.jpg" alt="Trem-bala Shinkansen">
+            <div>
+                <h2>Shinkansen</h2>
+                <p>
+                    Os trens-bala japoneses são famosos pela velocidade, conforto e pontualidade.
+                    Desde 1964, o Shinkansen conecta cidades com eficiência e inovação tecnológica,
+                    atingindo até 320 km/h.
+                </p>
+            </div>
+        </section>
+
+        <section>
+            <img src="img/metro.jpg" alt="Metrô de Tóquio">
+            <div>
+                <h2>Metrôs</h2>
+                <p>
+                    O metrô de Tóquio é um dos mais movimentados do mundo, conhecido pela organização,
+                    limpeza e pontualidade. Suas linhas interligam bairros e cidades com praticidade.
+                </p>
+            </div>
+        </section>
+
+        <section>
+            <img src="img/trens_urbanos.jpg" alt="Trens urbanos">
+            <div>
+                <h2>Trens Urbanos</h2>
+                <p>
+                    Além dos metrôs, os trens urbanos fazem parte da vida cotidiana japonesa,
+                    oferecendo transporte rápido e seguro para milhões de passageiros diariamente.
+                </p>
+            </div>
+        </section>
+
+        <section>
+            <img src="img/maglev.webp" alt="Trem Maglev">
+            <div>
+                <h2>Maglev</h2>
+                <p>
+                    O Japão investe no futuro do transporte com os trens de levitação magnética (Maglev),
+                    capazes de ultrapassar 500 km/h, combinando eficiência energética e inovação.
+                </p>
+            </div>
+        </section>
+        <section style="background: #e0e0e0; border-color: #999; padding: 1.5rem; gap: 2rem; flex-direction: row;">
+            <div style="flex:1; padding-right: 1rem; border-right: 2px dashed #999;">
+                <h2>ニュース (Notícia em JP)</h2>
+                <p style="line-height: 1.6; font-size: 0.95rem;">
+                    ＪＲ東日本は14日から、2つの新幹線を、またつなげて運転しています。<br><br>
+                    東北新幹線で今月6日、つなげて走っていた新幹線が外れました。このためＪＲは、新幹線をつなげて運転するのをやめていました。<br><br>
+                    電気の問題が原因だと考えていますが、詳しいことはわかっていません。<br><br>
+                    ＪＲは、2つの新幹線が外れないように、人が金具でとめて走らせています。<br><br>
+                    山形県から東京駅に着いた人は「乗り換えないで来ることができて、よかったです」と話しました。<br><br>
+                    福島県から来た人は「同じトラブルが続いているので、しっかり原因を調べてほしいです」と話していました。
+                </p>
+            </div>
+
+            <div style="flex:1; padding-left: 1rem;">
+                <h2>Notícia do Japão - Shinkansen
+                    Conectados – Mar 14, 2025</h2>
+                <p style="line-height: 1.6; font-size: 0.95rem;">
+                    A JR East (Japan Railway) começou no dia 14 a operar dois trens Shinkansen conectados. <br><br>
+                    No dia 6 deste mês, durante a operação da linha Tohoku Shinkansen, os trens conectados se separaram. Por isso, a JR interrompeu temporariamente o serviço de trens conectados. <br><br>
+                    A causa provavelmente foi um problema elétrico, mas os detalhes ainda não estão claros. <br><br>
+                    Para evitar que os trens se descolem novamente, funcionários prendem manualmente as conexões antes da partida. <br><br>
+                    Passageiros que chegaram de Yamagata à estação de Tóquio comentaram que foi bom não precisar fazer baldeações. <br><br>
+                    Passageiros vindos de Fukushima pediram que a causa do problema seja investigada para evitar novos incidentes.
+                </p>
+                <div style="text-align:right; font-size:0.85rem; color:#777; margin-top:0.5rem;">
+                    Fonte: <a href="https://japanese.todaiinews.com/detail/2ec0f40f635d08bf1aac16a83c5ce6fa?hl=en-US" target="_blank" style="color:#777; text-decoration:underline;">japanese.todaiinews.com</a>
+                </div>
+            </div>
+        </section>
+        <section style="background: #d9d9d9; border: 2px solid #999; border-radius: 10px; padding: 1.5rem; margin-top: 1rem; text-align:center;">
+            <h2 style="font-family: 'VT323', monospace; font-size:1.5rem; color:#555;">Vídeo Relacionado</h2>
+            <video width="450" height="300" controls style="border:2px solid #999; border-radius:8px; object-fit:cover; margin-top:1rem;">
+                <source src="img/shinkansen.mp4" type="video/mp4">
+                Seu navegador não suporta o elemento de vídeo.
+            </video>
+        </section>
+        <section>
+            <img src="img/robotica_ai.jpg" alt="Robótica e Inteligência Artificial">
+            <div>
+                <h2>Robótica e Inteligência Artificial</h2>
+                <p>
+                    O Japão é referência mundial em robótica e inteligência artificial.
+                    Robôs humanoides, como Pepper e ASIMO, são usados para auxiliar pessoas, entreter, e até em serviços de atendimento.
+                    A IA japonesa também é aplicada em fábricas, transporte e cidades inteligentes, ajudando a otimizar processos e melhorar a vida cotidiana.
+                    Pesquisas avançadas em automação e aprendizado de máquina colocam o Japão na vanguarda da inovação tecnológica global.
+                </p>
+            </div>
+        </section>
+        <section style="background: #e0e0e0; border-color: #999; padding: 1.5rem; gap: 2rem; flex-direction: row;">
+            <div style="flex:1; padding-right: 1rem; border-right: 2px dashed #999;">
+                <h2>ニュース (Notícia em JP)</h2>
+                <p style="line-height: 1.6; font-size: 0.95rem;">
+                    新しいおもちゃを紹介するイベントが、東京で始まりました。<br><br>
+                    200以上の会社が3万5000ぐらいの数のおもちゃを紹介しています。<br><br>
+                    電機製品の会社は、生成AIを使って会話ができるロボットを作りました。<br><br>
+                    ミーアキャットという動物の形をしていて、人と話したことや見た景色を覚えることができます。<br><br>
+                    最近、おもちゃの売り上げが上がっています。<br><br>
+                    2024年度は、今まででいちばんたくさん売れました。<br><br>
+                    おもちゃの会社の団体の人は「大人がおもちゃをよく買っています。外国人も日本のおもちゃを楽しんでいます」と話しています。<br><br>
+                    このイベントは、31日まで「東京ビッグサイト」で行っています。
+                </p>
+            </div>
+
+            <div style="flex:1; padding-left: 1rem;">
+                <h2>Evento de Novos Brinquedos – Robôs com IA - Aug 30, 2025</h2>
+                <p style="line-height:1.6; font-size:0.95rem;">
+                    Um evento de apresentação de novos brinquedos começou em Tóquio.
+                    Mais de 200 empresas exibem cerca de 35.000 brinquedos diferentes. <br><br>
+                    Empresas de eletrônicos criaram robôs que usam IA generativa para conversar com as pessoas.
+                    Um desses robôs tem formato de suricato e consegue lembrar conversas e cenários que viu. <br><br>
+                    Recentemente, as vendas de brinquedos aumentaram, sendo o ano fiscal de 2024 o que mais vendeu até agora.
+                    Representantes das empresas comentaram que “adultos compram muitos brinquedos e estrangeiros também estão aproveitando os produtos japoneses”. <br><br>
+                    O evento vai até o dia 31 no “Tokyo Big Sight”.
+                </p>
+                <div style="text-align:right; font-size:0.85rem; color:#777; margin-top:0.5rem;">
+                    Fonte: <a href="https://japanese.todaiinews.com/detail/6bbeda18be7e72d8430e5e88a3d699f5?hl=en-US" target="_blank" style="color:#777; text-decoration:underline;">japanese.todaiinews.com</a>
+                </div>
+            </div>
+        </section>
+            </div>
+        </section>
+    </main>
+</div>
+
+    </div>
+</section>
+
+<footer>
+    © 2025 - Projeto Japão | Tecnologia
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tradições do Japão</title>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: #f5fcf9; /* verde pastel bem clarinho */
+            font-family: 'Quicksand', sans-serif;
+            color: #333;
+        }
+
+        /* Estilo da "janela retrô" */
+        header {
+            background: #7db87d; /* verde pastel */
+            color: white;
+            padding: 0.5rem 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-family: 'VT323', monospace;
+            font-size: 1.2rem;
+        }
+
+        header .buttons {
+            display: flex;
+            gap: 8px;
+        }
+
+        header .btn {
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+            background: #fff;
+        }
+
+        header .btn.red { background: #ff5c5c; }
+        header .btn.yellow { background: #ffbd4c; }
+        header .btn.green { background: #00ca56; }
+
+        /* Layout geral */
+        .container {
+            display: flex;
+            max-width: 1200px;
+            margin: auto;
+            padding: 1rem;
+            gap: 1.5rem;
+        }
+
+        /* Coluna lateral estilo perfil */
+        aside {
+            width: 280px;
+            background: #fff;
+            border: 2px solid #a1d7a1; /* verde pastel mais escuro */
+            border-radius: 10px;
+            padding: 1rem;
+            font-size: 0.95rem;
+        }
+
+        aside h2 {
+            font-size: 1.2rem;
+            color: #7db87d;
+            margin-top: 0;
+            border-bottom: 2px dashed #a1d7a1;
+            padding-bottom: 5px;
+        }
+
+        aside img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 1rem;
+        }
+
+        aside ul {
+            list-style: none;
+            padding: 0;
+            margin: 0.5rem 0;
+        }
+
+        aside ul li {
+            margin-bottom: 0.4rem;
+        }
+
+        aside ul li a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        aside ul li a:hover {
+            color: #7db87d;
+        }
+
+        /* Conteúdo principal */
+        main {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        section {
+            background: #fff;
+            border: 2px solid #a1d7a1;
+            border-radius: 10px;
+            padding: 1rem 1.5rem;
+        }
+
+        section h2 {
+            font-family: 'VT323', monospace;
+            font-size: 1.5rem;
+            color: #7db87d;
+            margin-top: 0;
+            margin-bottom: 0.8rem;
+        }
+
+        section p {
+            line-height: 1.6;
+            margin-bottom: 1rem;
+        }
+
+        .img-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 0.8rem;
+        }
+
+        .img-container img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+            border: 2px solid #a1d7a1;
+            transition: transform 0.3s;
+        }
+
+        .img-container img:hover {
+            transform: scale(1.05);
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+            background: #7db87d;
+            color: white;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div>🍵 Tradições do Japão</div>
+    <div class="buttons">
+        <div class="btn white"></div>
+        <div class="btn white"></div>
+        <div class="btn white"></div>
+    </div>
+</header>
+
+<div class="container">
+    <!-- Coluna lateral -->
+    <aside>
+        <img src="img/logo_trad.webp" alt="Logo" style="width:100%; max-width:200px; height:auto; display:block; margin:0 auto;">
+        <h2>Perfil</h2>
+        <p><strong>Projeto Japão</strong><br>
+            Descubra costumes, cerimônias e tradições que atravessam gerações 🌿</p>
+        <h2>Links</h2>
+        <ul>
+            <li><a href="../home/index.html">🤍 Home</a></li>
+            <li><a href="../cultura/index.html">🤍 Cultura</a></li>
+            <li><a href="../tradicões/index.html">🤍 Tradições</a></li>
+            <li><a href="../gastronomia/index.html">🤍 Gastronomia</a></li>
+            <li><a href="../fotos/index.html">🤍 Fotos</a></li>
+            <li><a href="../multimidia/index.html">🤍 Multimídia</a></li>
+        </ul>
+    </aside>
+
+    <!-- Conteúdo -->
+    <main>
+        <section>
+            <h2>Cerimônia do Chá</h2>
+            <p><em>A cerimonia do chá, ou <em>chanoyu</em>, é uma prática tradicional que combina arte, filosofia e etiqueta.</em><br>
+                <em>Representa respeito, harmonia, pureza e tranquilidade, sendo um ritual meditativo e social ao mesmo tempo.</em><br>
+                <em>O preparo do chá matcha segue passos precisos, desde a limpeza das ferramentas até o ato de servir e receber o chá, valorizando cada gesto.</em><br>
+                <em>Participar dessa cerimônia permite compreender a estética japonesa e a atenção aos detalhes que a cultura valoriza.</em></p>
+            <div class="img-container">
+                <img src="img/cha1.jpg" alt="Cerimônia do Chá 1">
+                <img src="img/cha2.jpg" alt="Cerimônia do Chá 2">
+            </div>
+        </section>
+
+        <section>
+            <h2>Kimono</h2>
+            <p><em>O <em>kimono</em> é o traje tradicional japonês, usado em cerimônias, festivais e ocasiões formais.</em><br>
+                <em>Cores, padrões e estilo transmitem significado, muitas vezes ligado à idade, estação ou status social.</em><br>
+                <em>Aprender a vestir um kimono corretamente envolve conhecer o <em>obi</em>, camadas e nós.</em><br>
+                <em>Hoje é usado em momentos especiais, mas permanece como símbolo de elegância, tradição e identidade cultural.</em></p>
+            <div class="img-container">
+                <img src="img/kimono1.jpg" alt="Kimono 1">
+                <img src="img/kimono2.webp" alt="Kimono 2">
+            </div>
+        </section>
+
+        <section>
+            <h2>Ikebana</h2>
+            <p><em>A <em>ikebana</em> é a arte japonesa de arranjos florais, valorizando simplicidade, harmonia e conexão com a natureza.</em><br>
+                <em>Cada escolha de flor, galho e recipiente transmite sentimentos e simbolismos, refletindo filosofia japonesa de equilíbrio.</em><br>
+                <em>Praticar ikebana é um exercício de paciência, sensibilidade e meditação, transformando flores em expressão artística.</em></p>
+            <div class="img-container">
+                <img src="img/ikebana1.jpg" alt="Ikebana 1">
+                <img src="img/ikebena2.jpg" alt="Ikebana 2">
+            </div>
+        </section>
+
+        <section>
+            <h2>Festivais de Estações</h2>
+            <p><em>O Japão celebra a mudança das estações com diversos festivais sazonais, conectando as pessoas à natureza.</em><br>
+                <em>No <em>Hanami</em>, a primavera é marcada pela apreciação das flores de cerejeira, enquanto no <em>Momijigari</em> o outono celebra as folhas vermelhas.</em><br>
+                <em>Esses festivais incluem comidas típicas, passeios e atividades culturais, reforçando tradições e vínculos familiares.</em></p>
+            <div class="img-container">
+                <img src="img/estacao1.webp" alt="Festival de Estações 1">
+                <img src="img/estacao2.jpg" alt="Festival de Estações 2">
+            </div>
+        </section>
+
+        <section>
+            <h2>Setsubun – Expulsando Demônios</h2>
+            <p><em>O <em>Setsubun</em> é comemorado em fevereiro, marcando a passagem do inverno para a primavera.</em><br>
+                <em>Durante o ritual, crianças jogam <em>mamemaki</em> (grãos de soja) para expulsar demônios e atrair boa sorte.</em><br>
+                <em>Gritar “Oni wa soto! Fuku wa uchi!” (“Demônios para fora! Sorte para dentro!”) faz parte da celebração, criando um momento divertido e simbólico.</em><br>
+                <em>O <em>Setsubun</em> fortalece os laços familiares e mantém viva uma tradição ancestral japonesa.</em></p>
+            <div class="img-container">
+                <img src="img/setsubun1.jpg" alt="Setsubun 1">
+                <img src="img/setsubun2.jpg" alt="Setsubun 2">
+            </div>
+        </section>
+    </main>
+</div>
+
+<footer>
+    © 2025 - Projeto Japão | Tradições
+</footer>
+
+</body>
+</html>
+
+
+
